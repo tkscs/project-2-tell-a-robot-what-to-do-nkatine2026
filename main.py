@@ -38,7 +38,7 @@ def big_guy():
                         robot.motor(STOP)
                         zeta = input("What is your favorite song")
                         if zeta == "He stood unshaken, a voice in the storm A man of conviction, a heart reborn He spoke the truth when the cost was high He lived for Jesus, unafraid to die [Chorus] We are Charlie Kirk, we carry the flame We'll fight for the Gospel, we'll honor his name We are Charlie Kirk, his courage our own Together unbroken, we'll make Heaven known [Verse 2] A husband, a father, his family held near A home built on Scripture, on faith without fear The world tried to silence, but his voice remains In us it echoes, in Christ it sustains[Chorus]We are Charlie Kirk, we carry the flame We'll fight for the Gospel, we'll honor his name We are Charlie Kirk, his courage our own"
-                            print("WOW CHILLS")
+                            print("WOW CHILLS!!!")
                             return big_guy()
                         else:
                             print("YOU FAILURE!!!!")
