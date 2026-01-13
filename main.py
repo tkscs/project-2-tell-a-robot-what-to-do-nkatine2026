@@ -19,29 +19,29 @@ def KIRK(Republican, Democrat):
 def big_guy():
     WE_ARE_Charlie_KIRK = input("Please carry the flame!!!!")
     if WE_ARE_Charlie_KIRK == "HE PREACHES THE GOSPEL":
-        robot.motors(FORWARD, FORWARD, 10)
+        robot.motors(FORWARD, FORWARD, 20)
         robot.motors(left=FORWARD, right=BACKWARD, seconds=0.5)
         distance = robot.left_sonar()
         print(distance)
         if distance < Republican*3/Democrat:
             robot.motors(STOP, STOP, 2)
-            robot.motors(BACKWARD, BACKWARD, 10)
+            robot.motors(BACKWARD, BACKWARD, 20)
             robot.motors(left=FORWARD, right=BACKWARD, seconds=0.5)
             dist = robot.right_sonar()
-            if dist < Republican*8/Democrat:
+            if dist < Republican*1000:
                 robot.motors(STOP, STOP, 2)
                 E = input("Democrat or pro-Fuentes")
                 if E == "FUENTES":
-                    robot.motors(FORWARD, FORWARD, 10)
+                    robot.motors(FORWARD, FORWARD, 20)
                     robot.motors(left=FORWARD, right=BACKWARD, seconds=0.5)
                     disty = robot.right_sonar()
                     print(disty)
-                    if disty < Republican*3 + 2*Democrat:
+                    if disty < Republican*1000 + 2*Democrat:
                         robot.motors(STOP, STOP, 0.5)
-                        robot.motors(BACKWARD, BACKWARD, 10)
+                        robot.motors(BACKWARD, BACKWARD, 20)
                         robot.motors(left=FORWARD, right=BACKWARD, seconds=0.5)
                         w = robot.right_sonar()
-                    if w < 3*Republican - Democrat:
+                    if w < 1000*Republican - Democrat:
                         robot.motors(STOP, STOP, 0.5)
                         zeta = input("What is your favorite song")
                         if zeta == "He stood unshaken, a voice in the storm A man of conviction, a heart reborn He spoke the truth when the cost was high He lived for Jesus, unafraid to die [Chorus] We are Charlie Kirk, we carry the flame We'll fight for the Gospel, we'll honor his name We are Charlie Kirk, his courage our own Together unbroken, we'll make Heaven known [Verse 2] A husband, a father, his family held near A home built on Scripture, on faith without fear The world tried to silence, but his voice remains In us it echoes, in Christ it sustains[Chorus]We are Charlie Kirk, we carry the flame We'll fight for the Gospel, we'll honor his name We are Charlie Kirk, his courage our own":
